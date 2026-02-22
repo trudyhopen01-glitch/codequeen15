@@ -1,36 +1,61 @@
-
 body {
-    font-family: Consolas, monospace;
+    font-family: Arial, sans-serif;
     background-color: #0f172a;
-    color: #e5e7eb;
+    color: white;
     margin: 0;
-    padding: 0;
 }
 
-header {
+/* Navigation */
+nav {
     background-color: #020617;
+    padding: 12px;
     text-align: center;
-    padding: 25px;
-    border-bottom: 1px solid #1e293b;
 }
 
-h1 {
-    margin: 0;
+nav a {
     color: #38bdf8;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Sections */
+section {
+    padding: 25px;
+    max-width: 900px;
+    margin: auto;
 }
 
 h2 {
-    color: #7dd3fc;
+    color: #38bdf8;
 }
 
-section {
-    background-color: #020617;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #1e293b;
-    border-radius: 6px;
+/* Images */
+img {
+    width: 160px;
+    height: auto;
 }
 
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -38,32 +63,60 @@ table {
 }
 
 th, td {
-    border: 1px solid #1e293b;
-    padding: 10px;
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
 }
 
 th {
-    background-color: #0f172a;
     color: #38bdf8;
 }
 
-input, select, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 6px;
-    background-color: #0f172a;
-    color: #e5e7eb;
-    border: 1px solid #1e293b;
+/* Forms */
+form {
+    margin-top: 10px;
 }
 
-input[type="submit"] {
+label {
+    font-size: 14px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+    border: 1px solid gray;
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
     background-color: #38bdf8;
-    color: black;
     border: none;
     cursor: pointer;
-    font-weight: bold;
 }
 
-input[type="submit"]:hover {
+button:hover {
     background-color: #0ea5e9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    background-color: #020617;
+    margin-top: 20px;
+}
+#about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#about img {
+    width: 160px;
+    height: auto;
 }

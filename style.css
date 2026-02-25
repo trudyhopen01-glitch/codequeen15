@@ -1,20 +1,23 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: white;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #e4e6eb;
 }
 
-/* Navigation */
+/* Navigation using Flexbox */
+
 nav {
-    background-color: #020617;
-    padding: 12px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: #111827;
+    padding: 15px;
+    border-bottom: 1px solid #2a2f3a;
 }
 
 nav a {
-    color: #38bdf8;
-    margin: 0 12px;
+    color: #9ca3af;
     text-decoration: none;
     font-size: 14px;
 }
@@ -24,99 +27,131 @@ nav a:hover {
 }
 
 /* Header */
+
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background: #111827;
+    border-bottom: 1px solid #2a2f3a;
 }
 
-/* Sections */
+/* Sections with Borders */
+
 section {
-    padding: 25px;
-    max-width: 900px;
-    margin: auto;
-}
-
-h2 {
-    color: #38bdf8;
-}
-
-/* Images */
-img {
-    width: 160px;
-    height: auto;
-}
-
-/* Lists */
-ul, ol {
-    margin-left: 20px;
-}
-
-li {
-    margin-bottom: 6px;
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-}
-
-th, td {
-    border: 1px solid gray;
-    padding: 8px;
-    text-align: left;
-    font-size: 14px;
-}
-
-th {
-    color: #38bdf8;
-}
-
-/* Forms */
-form {
-    margin-top: 10px;
-}
-
-label {
-    font-size: 14px;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 12px;
-    border: 1px solid gray;
-}
-
-/* Buttons */
-button {
-    padding: 8px 14px;
-    background-color: #38bdf8;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0ea5e9;
-}
-
-/* Footer */
-footer {
-    text-align: center;
+    margin: 20px;
     padding: 20px;
-    font-size: 13px;
-    background-color: #020617;
-    margin-top: 20px;
+    background: #151922;
+    border: 1px solid #2a2f3a;
+    border-radius: 8px;
 }
+
+/* Headings */
+
+h1, h2, h3 {
+    color: white;
+}
+
+/* About Section Flex Layout */
+
 #about {
     display: flex;
     align-items: center;
     gap: 20px;
+    border: 1px solid #2a2f3a;
 }
 
 #about img {
-    width: 160px;
-    height: auto;
+    width: 140px;
+    border-radius: 50%;
+    border: 2px solid #2a2f3a;
+}
+
+/* Skills Layout Example */
+
+#skills ul {
+    border: 1px solid #2a2f3a;
+    padding: 10px;
+}
+
+/* Tables with Borders */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #2a2f3a;
+}
+
+th, td {
+    border: 1px solid #2a2f3a;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Form using Flexbox */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #2a2f3a;
+    padding: 15px;
+}
+
+input, textarea {
+    background: #1a1f2b;
+    border: 1px solid #2a2f3a;
+    color: #e4e6eb;
+    padding: 8px;
+}
+
+button {
+    background: #1a1f2b;
+    border: 1px solid #2a2f3a;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2563eb;
+}
+/* about-container*/
+/* Container for layout */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    border: 1px solid #2a2f3a;
+    padding: 20px;
+    border-radius: 8px;
+    background: #1946a7;
+    flex-direction: row;
+}
+
+
+/* Bio section */
+.about-bio {
+    max-width: 500px;
+}
+
+/* Highlights section */
+.about-highlights {
+    border-left: 2px solid #1946a7;
+    padding-left: 15px;
+}
+
+.about-highlights ul {
+    color: #9ca3af;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #2a2f3a;
+    color: #6b7280;
 }
